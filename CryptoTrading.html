@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/crypto-trading.css">
+    <link rel="stylesheet" href="./Css/styles.css">
+    <script src="./Javascript/crpyto-trading.js" defer></script>
+    <title>TradersFund - Crypto Education</title>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">TF</div>
+                <span>TradersFund</span>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Bonuses</a></li>
+                    <li><a href="exchanges.html">Exchanges</a></li>
+                    <li><a href="learn.html" class="active">Learn</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <!-- Market Ticker -->
+    <div class="market-ticker">
+        <div class="ticker-content">
+            <span>BTC $43,210 ▲2.5%</span>
+            <span>ETH $2,340 ▲1.8%</span>
+            <span>XRP $0.62 ▼0.3%</span>
+            <span>Market Cap: $1.65T</span>
+            <span>24h Vol: $58.3B</span>
+        </div>
+    </div>
+
+    <!-- Education Hero -->
+    <section class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="container">
+            <h1>Master <span class="floating">Crypto</span> Trading</h1>
+            <p>Learn blockchain fundamentals, trading strategies, and market analysis from beginner to pro level.</p>
+        </div>
+    </section>
+
+    <!-- Learning Path -->
+    <section class="container">
+        <h2 class="section-title">Learning Path</h2>
+        <div class="learning-path">
+            <!-- Blockchain Basics -->
+            <div class="concept-card">
+                <h3>Blockchain Fundamentals</h3>
+                <div class="module-progress">
+                    <div class="progress-bar" style="width: 45%"></div>
+                </div>
+                <ul class="topic-list">
+                    <li class="topic-item"><i class="fas fa-check-circle"></i>What is Blockchain?</li>
+                    <li class="topic-item"><i class="fas fa-check-circle"></i>Decentralization</li>
+                    <li class="topic-item"><i class="fas fa-lock"></i>Consensus Mechanisms</li>
+                    <li class="topic-item"><i class="fas fa-lock"></i>Smart Contracts</li>
+                </ul>
+                <button class="btn btn-primary">Continue Learning</button>
+            </div>
+
+            <!-- Trading Basics -->
+            <div class="concept-card">
+                <h3>Trading Essentials</h3>
+                <div class="module-progress">
+                    <div class="progress-bar" style="width: 20%"></div>
+                </div>
+                <ul class="topic-list">
+                    <li class="topic-item"><i class="fas fa-check-circle"></i>Market Orders</li>
+                    <li class="topic-item"><i class="fas fa-lock"></i>Limit Orders</li>
+                    <li class="topic-item"><i class="fas fa-lock"></i>Risk Management</li>
+                    <li class="topic-item"><i class="fas fa-lock"></i>Technical Analysis</li>
+                </ul>
+                <button class="btn btn-primary">Start Course</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Quiz -->
+    <section class="container">
+        <div class="quiz-container">
+            <h3>Crypto Knowledge Quiz</h3>
+            <div id="quiz-content">
+                <div class="quiz-question active">
+                    <p>What does "HODL" stand for?</p>
+                    <button class="quiz-option">Hold On for Dear Life</button>
+                    <button class="quiz-option">Hash Optimized Digital Ledger</button>
+                    <button class="quiz-option">Hourly Order Distribution Limit</button>
+                </div>
+                <div class="quiz-question">
+                    <p>Which consensus mechanism does Bitcoin use?</p>
+                    <button class="quiz-option">Proof of Stake</button>
+                    <button class="quiz-option">Proof of Work</button>
+                    <button class="quiz-option">Delegated Proof of Stake</button>
+                </div>
+            </div>
+            <div class="quiz-nav">
+                <button class="btn btn-secondary" id="prev-question">Previous</button>
+                <span id="question-count">Question 1 of 2</span>
+                <button class="btn btn-primary" id="next-question">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Crypto Glossary -->
+    <section class="container crypto-glossary">
+        <h2 class="section-title">Crypto Glossary</h2>
+        <div class="term-card">
+            <h4>Blockchain</h4>
+            <div class="term-definition">
+                A decentralized digital ledger that records transactions across many computers in such a way that the
+                registered transactions cannot be altered retroactively.
+            </div>
+        </div>
+        <div class="term-card">
+            <h4>Smart Contract</h4>
+            <div class="term-definition">
+                Self-executing contracts with the terms of the agreement between buyer and seller being directly written
+                into lines of code.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h3>TradersFund</h3>
+                        <p>Helping beginner traders start with free capital since 2023.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">TW</a>
+                            <a href="#" class="social-link">TG</a>
+                            <a href="#" class="social-link">DC</a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Bonuses</h3>
+                        <ul>
+                            <li><a href="#">No Deposit Bonuses</a></li>
+                            <li><a href="#">Crypto Exchange Offers</a></li>
+                            <li><a href="#">Forex Broker Promos</a></li>
+                            <li><a href="#">Stock Trading Rewards</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Beginner's Guide</a></li>
+                            <li><a href="#">Risk Management</a></li>
+                            <li><a href="#">Trading Strategies</a></li>
+                            <li><a href="#">Broker Reviews</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                            <li><a href="#">Affiliate Disclosure</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 TradersFund. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

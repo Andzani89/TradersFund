@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/risk-management.css">
+    <script src="./Javascript/risk-management.js" defer></script>
+    <title>TradersFund | Risk Management Guide</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">TF</div>
+                <span>TradersFund</span>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Bonuses</a></li>
+                    <li><a href="exchanges.html">Exchanges</a></li>
+                    <li><a href="learn.html">Learn</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Master Trading <span
+                    style="background: linear-gradient(to right, #ff7e5f, #feb47b); -webkit-background-clip: text; background-clip: text; color: transparent;">Risk
+                    Management</span></h1>
+            <p>Protect your capital and trade with confidence using proven risk management strategies used by
+                professional traders.</p>
+            <div class="cta-buttons">
+                <a href="#calculator" class="btn btn-primary">Try Risk Calculator</a>
+                <a href="#strategies" class="btn btn-secondary">View Strategies</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risk Management Principles -->
+    <section class="risk-content" id="strategies">
+        <div class="container">
+            <h2 class="section-title">Core Risk Management Principles</h2>
+            <div class="risk-grid">
+                <div class="risk-card">
+                    <div class="risk-icon">1%</div>
+                    <h3>The 1% Rule</h3>
+                    <p>Never risk more than 1% of your trading capital on a single trade. This ensures you can survive a
+                        losing streak and continue trading.</p>
+                    <ul>
+                        <li>Calculate 1% of your account balance</li>
+                        <li>Determine position size based on stop-loss</li>
+                        <li>Protects against emotional trading</li>
+                    </ul>
+                </div>
+                <div class="risk-card">
+                    <div class="risk-icon">🛑</div>
+                    <h3>Stop-Loss Orders</h3>
+                    <p>Always use stop-loss orders to limit potential losses on every trade you place.</p>
+                    <ul>
+                        <li>Set stops based on technical levels</li>
+                        <li>Adjust for market volatility (ATR)</li>
+                        <li>Never move stops further away</li>
+                        <li>Consider trailing stops for winners</li>
+                    </ul>
+                </div>
+                <div class="risk-card">
+                    <div class="risk-icon">⚖️</div>
+                    <h3>Risk-Reward Ratio</h3>
+                    <p>Only take trades with a minimum 1:2 risk-reward ratio to ensure profitability over time.</p>
+                    <ul>
+                        <li>Measure distance to stop and target</li>
+                        <li>Aim for 1:2 or better</li>
+                        <li>Reject trades with poor ratios</li>
+                        <li>Adjust position size accordingly</li>
+                    </ul>
+                </div>
+                <div class="risk-card">
+                    <div class="risk-icon">🧩</div>
+                    <h3>Portfolio Diversification</h3>
+                    <p>Spread risk across different assets and strategies to reduce correlation risk.</p>
+                    <ul>
+                        <li>Trade different asset classes</li>
+                        <li>Use uncorrelated strategies</li>
+                        <li>Limit exposure per sector</li>
+                        <li>Rebalance periodically</li>
+                    </ul>
+                </div>
+                <div class="risk-card">
+                    <div class="risk-icon">📊</div>
+                    <h3>Position Sizing</h3>
+                    <p>Adjust trade size based on account size and stop-loss distance to maintain consistent risk.</p>
+                    <ul>
+                        <li>Larger stops = smaller positions</li>
+                        <li>Smaller stops = larger positions</li>
+                        <li>Use position size calculators</li>
+                        <li>Consider volatility (ATR)</li>
+                    </ul>
+                </div>
+                <div class="risk-card">
+                    <div class="risk-icon">🧠</div>
+                    <h3>Emotional Control</h3>
+                    <p>Manage psychological risks with strict trading rules and discipline.</p>
+                    <ul>
+                        <li>Follow your trading plan</li>
+                        <li>Avoid revenge trading</li>
+                        <li>Take breaks after losses</li>
+                        <li>Journal all trades</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risk Calculator -->
+
+
+    <!-- Replace the existing calculator section with this code -->
+    <section class="risk-content" id="calculator">
+        <div class="container">
+            <h2 class="section-title">Position Size Calculator</h2>
+            <div class="calculator">
+                <h2>Precision Risk Calculator</h2>
+                <div class="calculator-grid">
+                    <div class="calculator-form">
+                        <div class="form-group">
+                            <label for="account-size">Account Balance ($)</label>
+                            <input type="number" id="account-size" placeholder="e.g. 10000" value="10000" min="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="risk-percent">Risk Per Trade (%)</label>
+                            <input type="number" id="risk-percent" placeholder="e.g. 1" value="1" min="0.1" max="100"
+                                step="0.1">
+                        </div>
+                        <div class="form-group">
+                            <label for="entry-price">Entry Price ($)</label>
+                            <input type="number" id="entry-price" placeholder="e.g. 50" value="50" min="0.0001"
+                                step="0.0001">
+                        </div>
+                        <div class="form-group">
+                            <label for="stop-loss">Stop-Loss Price ($)</label>
+                            <input type="number" id="stop-loss" placeholder="e.g. 48" value="48" min="0.0001"
+                                step="0.0001">
+                        </div>
+                        <div class="form-group">
+                            <label for="risk-unit">Asset Type</label>
+                            <select id="risk-unit">
+                                <option value="stocks">Stocks</option>
+                                <option value="crypto">Cryptocurrencies</option>
+                                <option value="forex">Forex</option>
+                            </select>
+                        </div>
+
+                        <button class="btn btn-primary" id="calculate-btn">Calculate Position</button>
+
+                    </div>
+                    <div class="calculator-results">
+                        <div class="result-item">
+                            <span class="result-label">Risk Amount:</span>
+                            <span class="result-value" id="risk-amount">$100.00</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Risk Per Unit:</span>
+                            <span class="result-value" id="risk-per-unit">$2.00</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Position Size:</span>
+                            <span class="result-value" id="position-size">50 shares</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Position Value:</span>
+                            <span class="result-value" id="position-value">$2,500.00</span>
+                        </div>
+                        <div class="result-item highlight">
+                            <span class="result-label">Potential Loss:</span>
+                            <span class="result-value" id="potential-loss">$100.00 (1.00%)</span>
+                        </div>
+                        <div class="result-item highlight">
+                            <span class="result-label">Potential Profit (1:2):</span>
+                            <span class="result-value" id="potential-profit">$200.00 (2.00%)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="risk-content">
+        <div class="container">
+            <h2 class="section-title">Risk Management FAQs</h2>
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Why is risk management more important than finding good trades?</div>
+                    <div class="faq-answer">
+                        <p>Even the best trading strategies have losing streaks. Proper risk management ensures you
+                            survive these inevitable drawdowns and remain in the game long enough for your edge to play
+                            out. Many traders find profitable setups but fail because they risk too much on each trade.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do I determine where to place my stop-loss?</div>
+                    <div class="faq-answer">
+                        <p>Stop-losses should be placed at logical technical levels where your trade thesis would be
+                            invalidated. Common approaches include:</p>
+                        <ul>
+                            <li>Below support/resistance levels</li>
+                            <li>Beyond recent swing highs/lows</li>
+                            <li>Using ATR (Average True Range) multiples</li>
+                            <li>Beyond key moving averages</li>
+                        </ul>
+                        <p>The key is to place it where the market structure changes, not based on arbitrary dollar
+                            amounts.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What's better: fixed dollar risk or percentage risk?</div>
+                    <div class="faq-answer">
+                        <p>Percentage risk (like the 1% rule) is generally better because it scales with your account
+                            size. As your account grows, your position sizes grow proportionally, and vice versa if your
+                            account shrinks. Fixed dollar amounts don't adapt to changing account sizes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do I handle risk during high volatility periods?</div>
+                    <div class="faq-answer">
+                        <p>During high volatility (earnings, news events, market crashes):</p>
+                        <ul>
+                            <li>Reduce position sizes to maintain the same dollar risk with wider stops</li>
+                            <li>Consider sitting out until volatility normalizes</li>
+                            <li>Use volatility-adjusted indicators like ATR for stops</li>
+                            <li>Avoid trading around scheduled high-impact news if you're not experienced</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Should I risk more when I'm on a winning streak?</div>
+                    <div class="faq-answer">
+                        <p>No. Increasing risk after wins is a form of gambling mentality ("I'm hot right now").
+                            Professional traders maintain consistent risk regardless of recent performance. The only
+                            time to increase risk is when you've formally grown your account enough to justify larger
+                            position sizes while maintaining the same percentage risk.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>TradersFund</h3>
+                    <p>Helping traders manage risk and protect capital since 2023.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">TW</a>
+                        <a href="#" class="social-link">TG</a>
+                        <a href="#" class="social-link">DC</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Risk Resources</h3>
+                    <ul>
+                        <li><a href="#">Position Size Calculator</a></li>
+                        <li><a href="#">Volatility Indicators</a></li>
+                        <li><a href="#">Trade Journal Template</a></li>
+                        <li><a href="#">Risk Management Books</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Trading Guides</h3>
+                    <ul>
+                        <li><a href="#">Beginner's Guide</a></li>
+                        <li><a href="#">Technical Analysis</a></li>
+                        <li><a href="#">Psychology of Trading</a></li>
+                        <li><a href="#">Broker Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Affiliate Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 TradersFund. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

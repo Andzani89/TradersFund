@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/beginner-guide.css">
+    <script src="./Javascript/beginner-guide.js" defer></script>
+    <title>Complete Beginner's Trading Guide | TradersFund</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">TF</div>
+                <span>TradersFund</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#bonuses">Bonuses</a></li>
+                    <li><a href="learn.html">Learn</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="guide-hero">
+        <div class="container">
+            <h1>Complete <span style="background:linear-gradient(to right, #ff7e5f, #feb47b);-webkit-background-clip:text;background-clip:text;color:transparent;">Beginner's Guide</span></h1>
+            <p>Master the fundamentals of trading with our step-by-step guide</p>
+            
+            <div class="progress-tracker" id="progressTracker">
+                <div class="progress-step" data-chapter="1">1</div>
+                <div class="progress-step" data-chapter="2">2</div>
+                <div class="progress-step" data-chapter="3">3</div>
+                <div class="progress-step" data-chapter="4">4</div>
+                <div class="progress-step" data-chapter="5">5</div>
+                <div class="progress-step" data-chapter="6">6</div>
+                <div class="progress-step" data-chapter="7">7</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guide Content -->
+    <section class="container">
+        <div class="guide-content">
+            <!-- Sidebar -->
+            <div class="guide-sidebar">
+                <div class="sidebar-menu">
+                    <h3>Chapters</h3>
+                    <ul id="chapterMenu">
+                        <li><a href="#" class="active" data-chapter="1">1. Trading Basics</a></li>
+                        <li><a href="#" data-chapter="2">2. Market Types</a></li>
+                        <li><a href="#" data-chapter="3">3. Order Types</a></li>
+                        <li><a href="#" data-chapter="4">4. Risk Management</a></li>
+                        <li><a href="#" data-chapter="5">5. Your First Trade</a></li>
+                        <li><a href="#" data-chapter="6">6. Trading Psychology</a></li>
+                        <li><a href="#" data-chapter="7">7. Next Steps</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="guide-main">
+                <!-- Chapter 1 -->
+                <div class="chapter active" id="chapter1">
+                    <h2>1. Trading Basics</h2>
+                    
+                    <h3>What is Trading?</h3>
+                    <p>Trading involves buying and selling financial assets (stocks, crypto, forex) to profit from price movements. Unlike investing which focuses on long-term growth, trading capitalizes on short-term market fluctuations.</p>
+                    
+                    <div class="concept-card">
+                        <h4>Key Concept: Buy Low, Sell High</h4>
+                        <p>The core principle is simple: purchase assets at lower prices and sell them at higher prices. Successful traders develop strategies to identify these opportunities consistently.</p>
+                    </div>
+                    
+                    <h3>Markets You Can Trade</h3>
+                    <ul>
+                        <li><strong>Stocks:</strong> Shares of companies (Apple, Tesla)</li>
+                        <li><strong>Forex:</strong> Currency pairs (EUR/USD, GBP/JPY)</li>
+                        <li><strong>Crypto:</strong> Digital assets (Bitcoin, Ethereum)</li>
+                        <li><strong>Commodities:</strong> Physical goods (Gold, Oil)</li>
+                        <li><strong>Indices:</strong> Market benchmarks (S&P 500, NASDAQ)</li>
+                    </ul>
+                    
+                    <h3>Essential Trading Terms</h3>
+                    <ul>
+                        <li><strong>Long:</strong> Buying expecting price to rise</li>
+                        <li><strong>Short:</strong> Selling expecting price to fall</li>
+                        <li><strong>Liquidity:</strong> Ease of buying/selling</li>
+                        <li><strong>Volatility:</strong> Price fluctuation intensity</li>
+                        <li><strong>Spread:</strong> Difference between bid/ask</li>
+                        <li><strong>Leverage:</strong> Borrowed capital to amplify positions</li>
+                    </ul>
+                    
+                    <div class="concept-card">
+                        <h4>Pro Tip: Paper Trading</h4>
+                        <p>Practice with virtual money before risking real capital. Most brokers offer demo accounts with $10,000-$100,000 in simulated funds. Treat it like real money to develop discipline.</p>
+                    </div>
+                    
+                    <div class="guide-nav">
+                        <button class="nav-btn nav-btn-secondary" disabled>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Previous
+                        </button>
+                        <button class="nav-btn nav-btn-primary" data-next="2">
+                            Next: Market Types
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Chapter 2 -->
+                <div class="chapter" id="chapter2">
+                    <h2>2. Market Types</h2>
+                    
+                    <h3>Bull vs Bear Markets</h3>
+                    <p><strong>Bull Market:</strong> Prices are rising, encouraging buying (trending upward for months/years)</p>
+                    <p><strong>Bear Market:</strong> Prices are falling, encouraging selling (decline of 20%+ from recent highs)</p>
+                    
+                    <div class="concept-card">
+                        <h4>Market Cycles</h4>
+                        <p>Markets move in cycles: Accumulation → Uptrend → Distribution → Downtrend. Recognizing these phases helps time entries/exits.</p>
+                    </div>
+                    
+                    <h3>Market Sessions</h3>
+                    <ul>
+                        <li><strong>Asian Session:</strong> (Tokyo, Hong Kong, Singapore)</li>
+                        <li><strong>European Session:</strong> (London, Frankfurt)</li>
+                        <li><strong>US Session:</strong> (New York, Chicago)</li>
+                        <li><strong>Crypto Markets:</strong> 24/7 trading</li>
+                    </ul>
+                    
+                    <h3>Market Analysis Methods</h3>
+                    <ul>
+                        <li><strong>Technical Analysis:</strong> Studying price charts/patterns</li>
+                        <li><strong>Fundamental Analysis:</strong> Evaluating economic/company data</li>
+                        <li><strong>Sentiment Analysis:</strong> Gauging market psychology</li>
+                    </ul>
+                    
+                    <div class="guide-nav">
+                        <button class="nav-btn nav-btn-secondary" data-prev="1">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Previous
+                        </button>
+                        <button class="nav-btn nav-btn-primary" data-next="3">
+                            Next: Order Types
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Chapter 3 -->
+                <div class="chapter" id="chapter3">
+                    <h2>3. Order Types</h2>
+                    
+                    <h3>Basic Order Types</h3>
+                    <ul>
+                        <li><strong>Market Order:</strong> Execute immediately at current price</li>
+                        <li><strong>Limit Order:</strong> Execute only at specified price</li>
+                        <li><strong>Stop Order:</strong> Becomes market order when price hits level</li>
+                        <li><strong>Stop-Limit:</strong> Becomes limit order when price hits level</li>
+                    </ul>
+                    
+                    <div class="concept-card">
+                        <h4>Order Execution Flow</h4>
+                        <p>Your broker → Exchange matching engine → Order book → Trade execution → Confirmation. Understanding this helps with slippage and fills.</p>
+                    </div>
+                    
+                    <h3>Advanced Order Types</h3>
+                    <ul>
+                        <li><strong>OCO (One Cancels Other):</strong> Links two orders</li>
+                        <li><strong>Iceberg:</strong> Large order split into smaller chunks</li>
+                        <li><strong>TWAP (Time Weighted Avg Price):</strong> Executes over time period</li>
+                    </ul>
+                    
+                    <div class="guide-nav">
+                        <button class="nav-btn nav-btn-secondary" data-prev="2">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Previous
+                        </button>
+                        <button class="nav-btn nav-btn-primary" data-next="4">
+                            Next: Risk Management
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Chapter 4 -->
+                <div class="chapter" id="chapter4">
+                    <h2>4. Risk Management</h2>
+                    
+                    <h3>The 1% Rule</h3>
+                    <p>Never risk more than 1% of your account on a single trade. This protects against strings of losses.</p>
+                    
+                    <div class="concept-card">
+                        <h4>Risk-Reward Ratio</h4>
+                        <p>Aim for at least 1:2 (risk $1 to make $2). Good trades have defined risk before entering.</p>
+                    </div>
+                    
+                    <h3>Essential Risk Tools</h3>
+                    <ul>
+                        <li><strong>Stop-Loss Orders:</strong> Automatic exit at predetermined loss level</li>
+                        <li><strong>Position Sizing:</strong> Calculate trade size based on account size</li>
+                        <li><strong>Diversification:</strong> Don't put all capital in one asset</li>
+                    </ul>
+                    
+                    <h3>Common Mistakes</h3>
+                    <ul>
+                        <li>Overtrading (too many positions)</li>
+                        <li>Revenge trading after losses</li>
+                        <li>Ignoring stop-losses</li>
+                        <li>Using excessive leverage</li>
+                    </ul>
+                    
+                    <div class="guide-nav">
+                        <button class="nav-btn nav-btn-secondary" data-prev="3">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Previous
+                        </button>
+                        <button class="nav-btn nav-btn-primary" data-next="5">
+                            Next: Your First Trade
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Chapter 5 -->
+                <div class="chapter" id="chapter5">
+                    <h2>5. Your First Trade</h2>
+                    
+                    <h3>Step-by-Step Process</h3>
+                    <ol>
+                        <li>Choose a broker/exchange</li>
+                        <li>Fund your account (start small)</li>
+                        <li>Analyze the market (use Chapter 2 methods)</li>
+                        <li>Determine entry/exit points</li>
+                        <li>Set stop-loss and take-profit</li>
+                        <li>Execute trade</li>
+                        <li>Monitor and manage position</li>
+                    </ol>
+                    
+                    <div class="concept-card">
+                        <h4>Demo Account First!</h4>
+                        <p>Practice with virtual funds for at least 1 month before trading real money. Develop consistency in your strategy.</p>
+                    </div>
+                    
+                    <h3>Trade Journal Template</h3>
+                    <p>Record every trade with:</p>
+                    <ul>
+                        <li>Date/time</li>
+                        <li>Asset traded</li>
+                        <li>Entry/exit prices</li>
+                        <li>Position size</li>
+                        <li>Reason for trade</li>
+                        <li>Emotional state</li>
+                        <li>Lessons learned</li>
+                    </ul>
+                    
+                    <div class="guide-nav">
+                        <button class="nav-btn nav-btn-secondary" data-prev="4">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Previous
+                        </button>
+                        <button class="nav-btn nav-btn-primary" data-next="6">
+                            Next: Trading Psychology
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Chapter 6 -->
+                <div class="chapter" id="chapter6">
+                    <h2>6. Trading Psychology</h2>
+                    
+                    <h3>Common Psychological Traps</h3>
+                    <ul>
+                        <li><strong>FOMO:</strong> Fear Of Missing Out (chasing trades)</li>
+                        <li><strong>Revenge Trading:</strong> Trying to recover losses quickly</li>
+                        <li><strong>Overconfidence:</strong> After winning streaks</li>
+                        <li><strong>Analysis Paralysis:</strong> Too much information</li>
+                    </ul>
+                    
+                    <div class="concept-card">
+                        <h4>The 90/90/90 Rule</h4>
+                        <p>90% of traders lose 90% of their capital in the first 90 days due to psychological mistakes, not lack of strategy.</p>
+                    </div>
+                    
+                    <h3>Developing Discipline</h3>
+                    <ul>
+                        <li>Stick to your trading plan</li>
+                        <li>Accept losses as part of the process</li>
+                        <li>Take breaks after emotional trades</li>
+                        <li>Review trades objectively</li>
+                    </ul>
+                    
+                    <div class="guide-nav">
+                        <button class="nav-btn nav-btn-secondary" data-prev="5">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Previous
+                        </button>
+                        <button class="nav-btn nav-btn-primary" data-next="7">
+                            Next: Next Steps
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Chapter 7 -->
+                <div class="chapter" id="chapter7">
+                    <h2>7. Next Steps</h2>
+                    
+                    <h3>Continue Your Education</h3>
+                    <ul>
+                        <li>Technical analysis (candlestick patterns, indicators)</li>
+                        <li>Fundamental analysis (economic reports, earnings)</li>
+                        <li>Risk management strategies</li>
+                        <li>Trading psychology books</li>
+                    </ul>
+                    
+                    <div class="concept-card">
+                        <h4>Recommended Resources</h4>
+                        <p>Check our <a href="tools.html" style="color: var(--accent);">Tools page</a> for trading journals, charting platforms, and educational materials.</p>
+                    </div>
+                    
+                    <h3>Join Our Community</h3>
+                    <p>Connect with other traders in our Discord for support, ideas, and accountability.</p>
+                    
+                    <div class="guide-nav">
+                        <button class="nav-btn nav-btn-secondary" data-prev="6">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Previous
+                        </button>
+                        <a href="tools.html" class="nav-btn nav-btn-primary">
+                            Explore Trading Tools
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

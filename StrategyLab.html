@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/stratergyLab.css">
+    <script src="./Javascript/stratergyLab.js" defer></script>
+    <title>TradersFund | Strategy Lab</title>
+    <!-- Use the same style as your main page -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">TF</div>
+                <span>TradersFund</span>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#bonuses">Bonuses</a></li>
+                    <li><a href="exchanges.html">Exchanges</a></li>
+                    <li><a href="blog.html">Learn</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <!-- Strategy Lab Hero Section -->
+    <section class="strategy-hero">
+        <div class="container">
+            <h1>Strategy Lab</h1>
+            <p>Explore, test, and master proven trading strategies across all markets and timeframes. Find the perfect
+                approach for your trading style.</p>
+        </div>
+    </section>
+
+    <!-- Strategy Categories -->
+    <div class="container">
+        <div class="strategy-categories">
+            <button class="strategy-category-btn active" data-category="all">All Strategies</button>
+            <button class="strategy-category-btn" data-category="trend">Trend Following</button>
+            <button class="strategy-category-btn" data-category="mean">Mean Reversion</button>
+            <button class="strategy-category-btn" data-category="breakout">Breakout</button>
+            <button class="strategy-category-btn" data-category="swing">Swing Trading</button>
+            <button class="strategy-category-btn" data-category="scalp">Scalping</button>
+        </div>
+    </div>
+
+    <!-- Strategy Grid -->
+    <div class="container">
+        <div class="strategy-grid">
+            <!-- Strategy 1 -->
+            <div class="strategy-card" data-category="trend">
+                <div class="strategy-image"
+                    style="background-image: url('/Assets/Images/cross\ over.webp');">
+                    <span class="strategy-type-tag">Trend Following</span>
+                </div>
+                <div class="strategy-content">
+                    <h2>Moving Average Crossover</h2>
+                    <p class="strategy-description">A classic trend-following strategy that uses two moving averages to
+                        identify trend direction and generate buy/sell signals.</p>
+                    <div class="strategy-stats">
+                        <span class="timeframe">Best for: Daily/4H</span>
+                        <span class="win-rate">60-70% Win Rate</span>
+                    </div>
+                    <a href="https://youtu.be/PMxtmeOZegw?si=TqNPGgdKipOLIQ1m" class="strategy-details-btn">View Strategy</a>
+                </div>
+            </div>
+
+            <!-- Strategy 2 -->
+            <div class="strategy-card" data-category="mean">
+                <div class="strategy-image"
+                    style="background-image: url('/Assets/Images/boiler\ bands.jpg');">
+                    <span class="strategy-type-tag">Mean Reversion</span>
+                </div>
+                <div class="strategy-content">
+                    <h2>Bollinger Band Reversion</h2>
+                    <p class="strategy-description">Capitalizes on overextended price moves by trading bounces off
+                        Bollinger Band extremes in ranging markets.</p>
+                    <div class="strategy-stats">
+                        <span class="timeframe">Best for: 1H/15M</span>
+                        <span class="win-rate">65-75% Win Rate</span>
+                    </div>
+                    <a href="https://youtu.be/pCmJ8wsAS_w?si=j56uUlwCkoPNVbeB" class="strategy-details-btn">View Strategy</a>
+                </div>
+            </div>
+
+            <!-- Strategy 3 -->
+            <div class="strategy-card" data-category="breakout">
+                <div class="strategy-image"
+                    style="background-image: url('/Assets/Images/pennant-and-flag.png');">
+                    <span class="strategy-type-tag">Breakout</span>
+                </div>
+                <div class="strategy-content">
+                    <h2>Triangle Breakout</h2>
+                    <p class="strategy-description">Identifies consolidation patterns and trades the breakout with
+                        volume confirmation for strong momentum moves.</p>
+                    <div class="strategy-stats">
+                        <span class="timeframe">Best for: 4H/1H</span>
+                        <span class="win-rate">55-65% Win Rate</span>
+                    </div>
+                    <a href="https://youtu.be/WAAy0YVxUEw?si=t09MlXLCMo6Eq7FD" class="strategy-details-btn">View Strategy</a>
+                </div>
+            </div>
+
+            <!-- Strategy 4 -->
+            <div class="strategy-card" data-category="swing">
+                <div class="strategy-image"
+                    style="background-image: url('/Assets/Images/fibonacci.jpg');">
+                    <span class="strategy-type-tag">Swing Trading</span>
+                </div>
+                <div class="strategy-content">
+                    <h2>Fibonacci Retracement</h2>
+                    <p class="strategy-description">Uses key Fibonacci levels to identify high-probability reversal
+                        zones in trending markets for 2-5 day holds.</p>
+                    <div class="strategy-stats">
+                        <span class="timeframe">Best for: Daily/4H</span>
+                        <span class="win-rate">60-70% Win Rate</span>
+                    </div>
+                    <a href="https://youtu.be/OHNaMb6Y8ZI?si=l9Ihg01ORG1eLvhO" class="strategy-details-btn">View Strategy</a>
+                </div>
+            </div>
+
+            <!-- Strategy 5 -->
+            <div class="strategy-card" data-category="scalp">
+                <div class="strategy-image"
+                    style="background-image: url('/Assets/Images/trendline.jpg');">
+                    <span class="strategy-type-tag">Scalping</span>
+                </div>
+                <div class="strategy-content">
+                    <h2>EMA Bounce Scalp</h2>
+                    <p class="strategy-description">Quick 5-15 minute trades based on the trendline break and retest on 5-minute chart.</p>
+                    <div class="strategy-stats">
+                        <span class="timeframe">Best for: 1M/5M</span>
+                        <span class="win-rate">70-80% Win Rate</span>
+                    </div>
+                    <a href="https://youtu.be/yHAC0xtBR2Q?si=h1rG9XyDg5G6B9-7" class="strategy-details-btn">View Strategy</a>
+                </div>
+            </div>
+
+            <!-- Strategy 6 -->
+            <div class="strategy-card" data-category="trend">
+                <div class="strategy-image"
+                    style="background-image: url('/Assets/Images/trend\ follow.jpg');">
+                    <span class="strategy-type-tag">Trend Following</span>
+                </div>
+                <div class="strategy-content">
+                    <h2>Trend Following</h2>
+                    <p class="strategy-description">Uses trend line bounce off to filter for strong trends and trades
+                        pullbacks in the trend direction.</p>
+                    <div class="strategy-stats">
+                        <span class="timeframe">Best for: 4H/Daily</span>
+                        <span class="win-rate">65-75% Win Rate</span>
+                    </div>
+                    <a href="https://youtu.be/kQya1ilXzgM?si=cAsFrMofQ4qV9MB8" class="strategy-details-btn">View Strategy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Strategy Types Section -->
+    <section class="strategy-detail-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Core Trading Strategy Types</h2>
+                <p>Understand the fundamental approaches to market speculation</p>
+            </div>
+
+            <div class="strategy-types">
+                <!-- Trend Following -->
+                <div class="strategy-type-card">
+                    <h3><span class="icon">→</span> Trend Following</h3>
+                    <p>Capitalizes on sustained price movements in one direction. Works best in strongly trending
+                        markets.</p>
+                    <ul>
+                        <li>Buy highs and sell higher in uptrends</li>
+                        <li>Sell lows and buy lower in downtrends</li>
+                        <li>Uses indicators like moving averages, ADX, MACD</li>
+                        <li>Requires patience through pullbacks</li>
+                    </ul>
+                </div>
+
+                <!-- Mean Reversion -->
+                <div class="strategy-type-card">
+                    <h3><span class="icon">↔</span> Mean Reversion</h3>
+                    <p>Based on the concept that prices tend to return to their average over time. Works best in ranging
+                        markets.</p>
+                    <ul>
+                        <li>Sell overbought conditions, buy oversold</li>
+                        <li>Uses indicators like RSI, Bollinger Bands</li>
+                        <li>Requires identifying range boundaries</li>
+                        <li>Higher win rate but smaller profits</li>
+                    </ul>
+                </div>
+
+                <!-- Breakout Trading -->
+                <div class="strategy-type-card">
+                    <h3><span class="icon">↑</span> Breakout Trading</h3>
+                    <p>Seeks to capitalize on price movements beyond defined support/resistance levels.</p>
+                    <ul>
+                        <li>Enter when price breaks key levels with volume</li>
+                        <li>False breakouts are major risk</li>
+                        <li>Works well after consolidation periods</li>
+                        <li>Often uses chart patterns like triangles</li>
+                    </ul>
+                </div>
+
+                <!-- Momentum Trading -->
+                <div class="strategy-type-card">
+                    <h3><span class="icon">🚀</span> Momentum Trading</h3>
+                    <p>Seeks to capture gains by riding existing market momentum in the short-term.</p>
+                    <ul>
+                        <li>Buy assets showing upward acceleration</li>
+                        <li>Short assets with downward acceleration</li>
+                        <li>Uses volume and price velocity indicators</li>
+                        <li>Requires quick entry/exit execution</li>
+                    </ul>
+                </div>
+
+                <!-- Arbitrage -->
+                <div class="strategy-type-card">
+                    <h3><span class="icon">⇄</span> Arbitrage</h3>
+                    <p>Exploits price differences of the same asset across different markets or forms.</p>
+                    <ul>
+                        <li>Requires fast execution and low fees</li>
+                        <li>Common in crypto (cross-exchange arb)</li>
+                        <li>Includes statistical arbitrage strategies</li>
+                        <li>Low risk but opportunities are fleeting</li>
+                    </ul>
+                </div>
+
+                <!-- News Trading -->
+                <div class="strategy-type-card">
+                    <h3><span class="icon">📰</span> News Trading</h3>
+                    <p>Capitalizes on market volatility around news events and economic releases.</p>
+                    <ul>
+                        <li>Requires fastest news feed access</li>
+                        <li>Can be automated with NLP algorithms</li>
+                        <li>High risk due to whipsaw potential</li>
+                        <li>Includes "buy the rumor, sell the news"</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeframes Section -->
+    <section class="strategy-detail-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Timeframe Strategies</h2>
+                <p>Different approaches for various holding periods</p>
+            </div>
+
+            <div class="timeframe-cards">
+                <!-- Scalping -->
+                <div class="timeframe-card">
+                    <h3>Scalping</h3>
+                    <div class="timeframe">Seconds to Minutes</div>
+                    <p>Ultra-short-term trades aiming for small, frequent profits. Requires intense focus and low
+                        commissions.</p>
+                    <ul>
+                        <li>5-20 trades per day</li>
+                        <li>1:1 or better risk-reward</li>
+                        <li>90%+ win rate target</li>
+                        <li>Order flow analysis critical</li>
+                    </ul>
+                </div>
+
+                <!-- Day Trading -->
+                <div class="timeframe-card">
+                    <h3>Day Trading</h3>
+                    <div class="timeframe">Minutes to Hours</div>
+                    <p>All positions closed before market close. Capitalizes on intraday volatility and patterns.</p>
+                    <ul>
+                        <li>1-5 trades per day</li>
+                        <li>1.5:1 or better risk-reward</li>
+                        <li>60-70% win rate target</li>
+                        <li>Technical analysis focused</li>
+                    </ul>
+                </div>
+
+                <!-- Swing Trading -->
+                <div class="timeframe-card">
+                    <h3>Swing Trading</h3>
+                    <div class="timeframe">Days to Weeks</div>
+                    <p>Captures short-to-medium term trends. Balances frequency with profit potential.</p>
+                    <ul>
+                        <li>5-10 trades per month</li>
+                        <li>2:1 or better risk-reward</li>
+                        <li>50-60% win rate target</li>
+                        <li>Combines technical and fundamental</li>
+                    </ul>
+                </div>
+
+                <!-- Position Trading -->
+                <div class="timeframe-card">
+                    <h3>Position Trading</h3>
+                    <div class="timeframe">Weeks to Years</div>
+                    <p>Long-term approach based on macroeconomic trends and fundamentals.</p>
+                    <ul>
+                        <li>5-10 trades per year</li>
+                        <li>3:1 or better risk-reward</li>
+                        <li>40-50% win rate target</li>
+                        <li>Fundamental analysis focused</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Asset Classes Section -->
+    <section class="strategy-detail-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Asset Class Strategies</h2>
+                <p>Specialized approaches for different markets</p>
+            </div>
+
+            <div class="asset-classes">
+                <!-- Forex -->
+                <div class="asset-card">
+                    <div class="asset-icon">💱</div>
+                    <h3>Forex</h3>
+                    <p>Strategies for currency pairs focusing on interest rate differentials and macroeconomic factors.
+                    </p>
+                    <ul>
+                        <li>Carry trades</li>
+                        <li>News trading NFP/CPI</li>
+                        <li>Breakout strategies</li>
+                        <li>Correlation trading</li>
+                    </ul>
+                </div>
+
+                <!-- Stocks -->
+                <div class="asset-card">
+                    <div class="asset-icon">📈</div>
+                    <h3>Stocks</h3>
+                    <p>Equity strategies from short-term technical to long-term fundamental approaches.</p>
+                    <ul>
+                        <li>Earnings plays</li>
+                        <li>Sector rotation</li>
+                        <li>Breakout/gap fills</li>
+                        <li>Value investing</li>
+                    </ul>
+                </div>
+
+                <!-- Crypto -->
+                <div class="asset-card">
+                    <div class="asset-icon">₿</div>
+                    <h3>Crypto</h3>
+                    <p>Digital asset strategies leveraging crypto's unique volatility and 24/7 markets.</p>
+                    <ul>
+                        <li>BTC dominance plays</li>
+                        <li>Altcoin season strategies</li>
+                        <li>Exchange arbitrage</li>
+                        <li>On-chain analytics</li>
+                    </ul>
+                </div>
+
+                <!-- Commodities -->
+                <div class="asset-card">
+                    <div class="asset-icon">⛏️</div>
+                    <h3>Commodities</h3>
+                    <p>Trading physical goods from oil to gold based on supply/demand fundamentals.</p>
+                    <ul>
+                        <li>Seasonal patterns</li>
+                        <li>Futures roll yields</li>
+                        <li>Geopolitical plays</li>
+                        <li>Inflation hedges</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Get New Trading Strategies</h2>
+            <p>Subscribe to receive our latest strategy backtests, optimizations, and trading framework updates.</p>
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>TradersFund</h3>
+                    <p>Helping beginner traders start with free capital since 2024.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">TW</a>
+                        <a href="#" class="social-link">TG</a>
+                        <a href="#" class="social-link">DC</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Bonuses</h3>
+                    <ul>
+                        <li><a href="exchanges.html">No Deposit Bonuses</a></li>
+                        <li><a href="index.html#bonuses">Crypto Exchange Offers</a></li>
+                        <li><a href="#">Forex Broker Promos</a></li>
+                        <li><a href="#">Stock Trading Rewards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="beginner-guide.html">Beginner's Guide</a></li>
+                        <li><a href="Risk-Management.html">Risk Management</a></li>
+                        <li><a href="StrategyLab.html">Trading Strategies</a></li>
+                        <li><a href="exchanges.html">Broker Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Affiliate Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 TradersFund. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

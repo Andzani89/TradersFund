@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/exchange.css">
+    <link rel="stylesheet" href="./Css/styles.css">
+    <script src="./Javascript/exchange.js" defer></script>
+    <title>Crypto Exchange Bonuses | TradersFund</title>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">TF</div>
+                <span>TradersFund</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#bonuses">Bonuses</a></li>
+                    <li><a href="exchanges.html" class="active">Exchanges</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="exchange-hero">
+        <div class="container">
+            <h1>Claim <span
+                    style="background:linear-gradient(to right, #ff7e5f, #feb47b);-webkit-background-clip:text;background-clip:text;color:transparent;">Crypto
+                    Exchange</span> Bonuses</h1>
+            <p>Get free crypto to start trading with these verified exchange sign-up offers</p>
+        </div>
+    </section>
+
+    <!-- Exchange Filters -->
+    <section class="container">
+        <div class="exchange-filters">
+            <button class="filter-btn active" data-filter="all">All Exchanges</button>
+            <button class="filter-btn" data-filter="no-deposit">No Deposit</button>
+            <button class="filter-btn" data-filter="signup">Sign-Up Bonus</button>
+            <button class="filter-btn" data-filter="trading">Trading Bonus</button>
+            <button class="filter-btn" data-filter="defi">DeFi</button>
+        </div>
+    </section>
+
+    <!-- Exchange Grid -->
+    <section class="container">
+        <div class="exchange-grid">
+            <!-- Binance -->
+            <div class="exchange-card" data-category="signup trading">
+                <div class="exchange-header">
+                    <img src="./Assets/Images/binance.png" alt="Binance"
+                        class="exchange-logo">
+                    <div class="exchange-name">Binance</div>
+                </div>
+                <div class="exchange-body">
+                    <div class="bonus-amount">$100 Welcome Rewards</div>
+                    <div class="bonus-details">
+                        <p><i>✓</i> $20 bonus after KYC Verification</p>
+                        <p><i>✓</i> $30 bonus on your first deposit</p>
+                        <p><i>✓</i> $50 after placing your first trade</p>
+                    </div>
+                    <button class="claim-btn"
+                        onclick="window.open('https://www.binance.com/en/register?ref=YOUR_REF_CODE')">Claim
+                        Bonus</button>
+                </div>
+            </div>
+
+            <!-- WEEX -->
+            <div class="exchange-card" data-category="no-deposit signup trading">
+                <div class="exchange-header">
+                    <img src="/Assets/Images/weex.png" alt="weex"
+                        class="exchange-logo">
+                    <div class="exchange-name">Weex</div>
+                </div>
+                <div class="exchange-body">
+                    <div class="bonus-amount">$100 Welcome Bonus</div>
+                    <div class="bonus-details">
+                        <p><i>✓</i> No deposit required</p>
+                        <p><i>✓</i> Complete KYC to withdraw</p>
+                        <p><i>✓</i> $10,000 demo account</p>
+                    </div>
+                    <button class="claim-btn"
+                        onclick="window.open('https://support.weex.com/en/register?vipCode=7gu8z')">Claim
+                        Bonus</button>
+                </div>
+            </div>
+
+            <!-- BYBIT -->
+            <div class="exchange-card" data-category="signup trading">
+                <div class="exchange-header">
+                    <img src="/Assets/Images/bybit.jpg" alt="bybit"
+                        class="exchange-logo">
+                    <div class="exchange-name">Bybit</div>
+                </div>
+                <div class="exchange-body">
+                    <div class="bonus-amount">$50 Welcome Rewards</div>
+                    <div class="bonus-details">
+                        <p><i>✓</i> Up to $5050 bonus for completing tasks</p>
+                        <p><i>✓</i> $20 coupon instantly after sign-up</p>
+                        <p><i>✓</i> $10 after placing your first trade</p>
+                    </div>
+                    <button class="claim-btn"
+                        onclick="window.open('https://www.bybit.com/invite?ref=GAW1MVV')">Claim
+                        Bonus</button>
+                </div>
+            </div>
+
+            <!-- MEXC -->
+            <div class="exchange-card" data-category="signup trading defi no-deposit">
+                <div class="exchange-header">
+                    <img src="/Assets/Images/mexc.png" alt="MEXC" class="exchange-logo">
+                    <div class="exchange-name">MEXC</div>
+                </div>
+                <div class="exchange-body">
+                    <div class="bonus-amount">$8,000 in Rewards</div>
+                    <div class="bonus-details">
+                        <p><i>✓</i> $20 sign bonus</p>
+                        <p><i>✓</i> Hybrid platform</p>
+                        <p><i>✓</i> Up to 4000+ tokens</p>
+                    </div>
+                    <button class="claim-btn" onclick="window.open('https://www.mexc.com/auth/signup?inviteCode=2v3Bi')">Claim
+                        Bonus</button>
+                </div>
+            </div>
+
+            <!-- COINW -->
+            <div class="exchange-card" data-category="no-deposit signup">
+                <div class="exchange-header">
+                    <img src="/Assets/Images/coinW.png" alt="CoinW"
+                        class="exchange-logo">
+                    <div class="exchange-name">CoinW</div>
+                </div>
+                <div class="exchange-body">
+                    <div class="bonus-amount">$200 Welcome Bonus</div>
+                    <div class="bonus-details">
+                        <p><i>✓</i> No deposit required</p>
+                        <p><i>✓</i> $50 super bonus for futures trading</p>
+                        <p><i>✓</i> $150 for completing simple tasks</p>
+                    </div>
+                    <button class="claim-btn"
+                        onclick="window.open('https://www.coinw.com/en_US/register?r=3480270')">Claim
+                        Bonus</button>
+                </div>
+            </div>
+
+            <!-- Gate.io -->
+            <div class="exchange-card" data-category="no-deposit signup">
+                <div class="exchange-header">
+                    <img src="/Assets/Images/gate.io.png" alt="Gate.io" class="exchange-logo">
+                    <div class="exchange-name">Gate.io</div>
+                </div>
+                <div class="exchange-body">
+                    <div class="bonus-amount">$10,000 in Rewards</div>
+                    <div class="bonus-details">
+                        <p><i>✓</i> New user reward</p>
+                        <p><i>✓</i> Futures trading reward</p>
+                        <p><i>✓</i> $100 beginner tasks</p>
+                    </div>
+                    <button class="claim-btn" onclick="window.open('https://www.gate.io/signup/VLREVFXDBQ?ref_type=102')">Claim
+                        Bonus</button>
+                </div>
+            </div>
+
+
+
+            <!-- KRAKEN -->
+            <div class="exchange-card" data-category="no-deposit signup">
+                <div class="exchange-header">
+                    <img src="/Assets/Images/kraken.jpg" alt="Kraken" class="exchange-logo">
+                    <div class="exchange-name">Kraken</div>
+                </div>
+                <div class="exchange-body">
+                    <div class="bonus-amount">$200 in Rewards</div>
+                    <div class="bonus-details">
+                        <p><i>✓</i> New user reward</p>
+                        <p><i>✓</i> Futures trading reward</p>
+                        <p><i>✓</i> $200 after completing KYC verification</p>
+                    </div>
+                    <button class="claim-btn" onclick="window.open('https://www.gate.io/signup/YOUR_REF_CODE')">Claim
+                        Bonus</button>
+                </div>
+            </div>
+
+
+            <!-- COINBASE -->
+            <div class="exchange-card" data-category="no-deposit signup">
+                <div class="exchange-header">
+                    <img src="/Assets/Images/coinbase.png" alt="Coinbase" class="exchange-logo">
+                    <div class="exchange-name">Coinbase</div>
+                </div>
+                <div class="exchange-body">
+                    <div class="bonus-amount">$200 in Rewards</div>
+                    <div class="bonus-details">
+                        <p><i>✓</i> New user reward</p>
+                        <p><i>✓</i> Learn and earn rewards</p>
+                        <p><i>✓</i> $200 after completing KYC verification</p>
+                    </div>
+                    <button class="claim-btn" onclick="window.open('https://advanced.coinbase.com/join/BM2BSE4')">Claim
+                        Bonus</button>
+                </div>
+            </div>
+
+
+            <!-- KUCOION -->
+            <div class="exchange-card" data-category="no-deposit trading signup">
+                <div class="exchange-header">
+                    <img src="/Assets/Images/kucoin.png" alt="Gate.io" class="exchange-logo">
+                    <div class="exchange-name">KuCoin</div>
+                </div>
+                <div class="exchange-body">
+                    <div class="bonus-amount">$11,000 in Rewards</div>
+                    <div class="bonus-details">
+                        <p><i>✓</i> New user reward</p>
+                        <p><i>✓</i> $20 Withdrawal rewards </p>
+                        <p><i>✓</i> Instantly recieve 100 USDT tokens</p>
+                    </div>
+                    <button class="claim-btn" onclick="window.open('https://www.kucoin.com/r/rf/CX8HJSFE')">Claim
+                        Bonus</button>
+                </div>
+            </div>
+
+
+            <!-- COINEX -->
+            <div class="exchange-card" data-category="trading">
+                <div class="exchange-header">
+                    <img src="/Assets/Images/CoinEx.jpg" alt="CoinEx" class="exchange-logo">
+                    <div class="exchange-name">CoinEx</div>
+                </div>
+                <div class="exchange-body">
+                    <div class="bonus-amount">$100 Grand Bonus</div>
+                    <div class="bonus-details">
+                        <p><i>✓</i> New user reward</p>
+                        <p><i>✓</i> Trading volume milestone</p>
+                        <p><i>✓</i> Up to 20% in cashback</p>
+                    </div>
+                    <button class="claim-btn" onclick="window.open('https://www.gate.io/signup/YOUR_REF_CODE')">Claim
+                        Bonus</button>
+                </div>
+            </div>
+
+            <!-- HOTCOIN -->
+            <div class="exchange-card" data-category="trading no-deposit signup">
+                <div class="exchange-header">
+                    <img src="/Assets/Images/hotcoin.jpeg" alt="HOTCOIN" class="exchange-logo">
+                    <div class="exchange-name">Hotcoin</div>
+                </div>
+                <div class="exchange-body">
+                    <div class="bonus-amount">$9,060 in Rewards</div>
+                    <div class="bonus-details">
+                        <p><i>✓</i> New user reward</p>
+                        <p><i>✓</i> $10 coupon after registration</p>
+                        <p><i>✓</i> $10 coupon after completing KYC verification</p>
+                    </div>
+                    <button class="claim-btn" onclick="window.open('https://www.hotcoin.com/register?icCode=y608bb8a&hotcoinid=1')">Claim
+                        Bonus</button>
+                </div>
+            </div>
+
+            <!-- BITMART -->
+            <div class="exchange-card" data-category="trading signup">
+                <div class="exchange-header">
+                    <img src="/Assets/Images/bitmart.png" alt="Gate.io" class="exchange-logo">
+                    <div class="exchange-name">Bitmart</div>
+                </div>
+                <div class="exchange-body">
+                    <div class="bonus-amount">$8,000 in Rewards</div>
+                    <div class="bonus-details">
+                        <p><i>✓</i> New user reward</p>
+                        <p><i>✓</i> Redeem $200 in airdrops </p>
+                        <p><i>✓</i> up to $3,000 in task rewards</p>
+                    </div>
+                    <button class="claim-btn" onclick="window.open('https://www.bitmart.com/invite/cPwbDf/en')">Claim
+                        Bonus</button>
+                </div>
+            </div>
+
+            <!-- BINGX -->
+            <div class="exchange-card" data-category="signup">
+                <div class="exchange-header">
+                    <img src="/Assets/Images/bingX.png" alt="bingX" class="exchange-logo">
+                    <div class="exchange-name">BingX</div>
+                </div>
+                <div class="exchange-body">
+                    <div class="bonus-amount">$6,000 in Rewards</div>
+                    <div class="bonus-details">
+                        <p><i>✓</i> New user reward</p>
+                        <p><i>✓</i> VIP mystery boxes</p>
+                        <p><i>✓</i> Trading volume milestone</p>
+                    </div>
+                    <button class="claim-btn" onclick="window.open('https://bingx.com/invite/OO9BZM/')">Claim
+                        Bonus</button>
+                </div>
+            </div>
+
+            <!-- BDYFi -->
+            <div class="exchange-card" data-category="signup">
+                <div class="exchange-header">
+                    <img src="/Assets/Images/bydfi.png" alt="BYDFi" class="exchange-logo">
+                    <div class="exchange-name">BYDFi</div>
+                </div>
+                <div class="exchange-body">
+                    <div class="bonus-amount">$8,000 in Rewards</div>
+                    <div class="bonus-details">
+                        <p><i>✓</i> New user reward</p>
+                        <p><i>✓</i> VIP mystery boxes</p>
+                        <p><i>✓</i> $20 Instantly after sign-up</p>
+                    </div>
+                    <button class="claim-btn" onclick="window.open('BYDFi  : https://partner.bydfi.com/j/XVlAXlIR')">Claim
+                        Bonus</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>TradersFund</h3>
+                    <p>Helping beginner traders start with free capital since 2024.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">TW</a>
+                        <a href="#" class="social-link">TG</a>
+                        <a href="#" class="social-link">DC</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Bonuses</h3>
+                    <ul>
+                        <li><a href="#">No Deposit Bonuses</a></li>
+                        <li><a href="#">Crypto Exchange Offers</a></li>
+                        <li><a href="#">Forex Broker Promos</a></li>
+                        <li><a href="#">Stock Trading Rewards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Beginner's Guide</a></li>
+                        <li><a href="#">Risk Management</a></li>
+                        <li><a href="#">Trading Strategies</a></li>
+                        <li><a href="#">Broker Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Affiliate Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 TradersFund. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

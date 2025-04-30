@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/technical-analysis.css">
+    <link rel="stylesheet" href="./Css/styles.css">
+    <script src="./Javascript/technical-analysis.js" defer></script>
+    <title>Technical Analysis Guide | TradersFund</title>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">TF</div>
+                <span>TradersFund</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="exchanges.html">Exchanges</a></li>
+                    <li><a href="Blog.html" class="active">Blog</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="ta-hero">
+        <div class="container">
+            <h1>Master <span
+                    style="background:linear-gradient(to right, #ff7e5f, #feb47b);-webkit-background-clip:text;background-clip:text;color:transparent;">Technical
+                    Analysis</span></h1>
+            <p>Learn to read price charts like a professional trader</p>
+        </div>
+    </section>
+
+    <!-- TA Navigation -->
+    <section class="container">
+        <div class="ta-nav" id="taNav">
+            <button class="ta-nav-btn active" data-section="candlesticks">Candlesticks</button>
+            <button class="ta-nav-btn" data-section="chart-patterns">Chart Patterns</button>
+            <button class="ta-nav-btn" data-section="indicators">Indicators</button>
+            <button class="ta-nav-btn" data-section="support-resistance">Support/Resistance</button>
+            <button class="ta-nav-btn" data-section="trend-analysis">Trend Analysis</button>
+            <button class="ta-nav-btn" data-section="volume">Volume Analysis</button>
+        </div>
+    </section>
+
+    <!-- Chart Container -->
+    <!--
+    <section class="container">
+        <div class="chart-container" id="chart-container">
+            <div class="chart-placeholder">
+                <img src="./Assets/Images/candle patterns.avif" id="chart" alt="">
+            </div>
+        </div>
+    </section>
+
+    -->
+    <!-- TA Content Sections -->
+    <section class="container" id="ta-section">
+        <!-- Candlesticks Section -->
+        <div class="ta-section active" id="candlesticks">
+            <h2>Candlestick Analysis</h2>
+            <p>Candlestick charts display price movements using "candles" that show open, high, low, and close prices
+                for a time period.</p>
+
+            <div class="concept-card">
+                <h4>Key Concept: Candlestick Anatomy</h4>
+                <p>Each candle consists of a body (open/close) and wicks (high/low). Green/white candles indicate price
+                    rose, red/black candles show price fell.</p>
+            </div>
+
+            <h3>Common Candlestick Patterns</h3>
+            <div class="pattern-grid">
+                <div class="pattern-card">
+                    <h4>Hammer</h4>
+                    <img src="/Assets/Images/hammer2.png" alt="Hammer Pattern" id="candles">
+                    <p>Bullish reversal pattern with small body and long lower wick, appears after downtrend.</p>
+                </div>
+
+                <div class="pattern-card">
+                    <h4>Engulfing</h4>
+                    <img src="/Assets/Images/engulfing.png" alt="Engulfing Pattern" id="candles">
+                    <p>Strong reversal signal where second candle completely "engulfs" the first.</p>
+                </div>
+
+                <div class="pattern-card">
+                    <h4>Doji</h4>
+                    <img src="/Assets/Images/doji.webp" alt="Doji Pattern" id="candles">
+                    <p>Indecision pattern where open and close are nearly equal, signals potential reversal.</p>
+                </div>
+            </div>
+
+            <h3>How to Trade Candlestick Patterns</h3>
+            <ol>
+                <li>Confirm pattern forms at key support/resistance</li>
+                <li>Wait for candle to fully form before acting</li>
+                <li>Use volume to confirm strength of pattern</li>
+                <li>Place stop-loss below pattern low (for bullish) or above high (for bearish)</li>
+            </ol>
+        </div>
+
+        <!-- Chart Patterns Section -->
+        <div class="ta-section" id="chart-patterns">
+            <h2>Chart Patterns</h2>
+            <p>Price formations that indicate continuation or reversal of trends, formed by price action over time.</p>
+
+            <h3>Reversal Patterns</h3>
+            <div class="pattern-grid">
+                <div class="pattern-card">
+                    <h4>Head & Shoulders</h4>
+                    <img src="/Assets/Images/head and sholders.jpg" alt="Head and Shoulders">
+                    <p>Three peaks with middle highest, signals trend reversal when neckline breaks.</p>
+                </div>
+
+                <div class="pattern-card">
+                    <h4>Double Top/Bottom</h4>
+                    <img src="/Assets/Images/double-top-bottom.jpg" alt="Double Top">
+                    <p>Two failed attempts at breaking resistance (top) or support (bottom).</p>
+                </div>
+            </div>
+
+            <h3>Continuation Patterns</h3>
+            <div class="pattern-grid">
+                <div class="pattern-card">
+                    <h4>Flags & Pennants</h4>
+                    <img src="/Assets/Images/pennant-and-flag.png" alt="Flag Pattern">
+                    <p>Brief consolidation after strong move, typically resumes in same direction.</p>
+                </div>
+
+                <div class="pattern-card">
+                    <h4>Triangles</h4>
+                    <img src="/Assets/Images/triangle-patterns.png" alt="Triangle Pattern">
+                    <p>Symmetrical, ascending, or descending - breakouts typically powerful.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indicators Section -->
+        <div class="ta-section" id="indicators">
+            <h2>Technical Indicators</h2>
+            <p>Mathematical calculations based on price/volume used to forecast price direction.</p>
+
+            <div class="indicator-controls">
+                <button class="indicator-btn active" data-indicator="rsi">RSI</button>
+                <button class="indicator-btn" data-indicator="macd">MACD</button>
+                
+            </div>
+
+            <div id="rsi-indicator">
+                <h3>Relative Strength Index (RSI)</h3>
+
+                <div class="pattern-card">
+                    <h4>Triangles</h4>
+                    <img src="/Assets/Images/RSI.png" alt="Triangle Pattern">
+                    <p>Symmetrical, ascending, or descending - breakouts typically powerful.</p>
+                </div>
+
+                <p>Momentum oscillator measuring speed of price movements (0-100 scale).</p>
+                <ul>
+                    <li><strong>Overbought:</strong> Above 70 (potential sell)</li>
+                    <li><strong>Oversold:</strong> Below 30 (potential buy)</li>
+                    <li><strong>Divergence:</strong> When price makes new high but RSI doesn't</li>
+                </ul>
+
+                <div class="concept-card">
+                    <h4>RSI Strategy</h4>
+                    <p>Combine RSI with trend analysis - only take oversold signals in uptrends, overbought in
+                        downtrends.</p>
+                </div>
+            </div>
+
+            <div id="macd-indicator" style="display: none;">
+                <h3>Moving Average Convergence Divergence (MACD)</h3>
+                <div class="pattern-card">
+                    <h4>Triangles</h4>
+                    <img src="/Assets/Images/MACD.jpg" alt="MACD">
+                </div>
+
+                <p>Trend-following momentum indicator showing relationship between two MAs.</p>
+                <ul>
+                    <li><strong>Signal Line Cross:</strong> MACD line crosses signal line</li>
+                    <li><strong>Zero Line Cross:</strong> MACD crosses centerline</li>
+                    <li><strong>Divergence:</strong> Price and MACD disagree</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Support/Resistance Section -->
+        <div class="ta-section" id="support-resistance">
+            <h2>Support & Resistance</h2>
+            <div class="pattern-card">
+                <h4>Triangles</h4>
+                <img src="/Assets/Images/supportAndResistance.png" alt="support-resistance">
+            </div>
+            <p>Key price levels where buying (support) or selling (resistance) pressure emerges.</p>
+
+            <h3>Identifying Key Levels</h3>
+            <ul>
+                <li>Previous swing highs/lows</li>
+                <li>Price consolidation areas</li>
+                <li>Round numbers (psychological levels)</li>
+                <li>Volume spikes</li>
+            </ul>
+
+            <div class="concept-card">
+                <h4>Support/Resistance Trading</h4>
+                <p>Buy near support with stop below, sell near resistance with stop above. Watch for breakouts with
+                    increased volume.</p>
+            </div>
+
+            <h3>Role Reversal Principle</h3>
+            <p>When support breaks, it often becomes new resistance (and vice versa).</p>
+        </div>
+
+        <!-- Trend Analysis Section -->
+        <div class="ta-section" id="trend-analysis">
+            <h2>Trend Analysis</h2>
+            <div class="pattern-card">
+                <h4>Triangles</h4>
+                <img src="/Assets/Images/TREND-ANALYSIS-2.jpg" alt="Trend analysis">
+            </div>
+            <p>"The trend is your friend" - identifying and trading with the prevailing market direction.</p>
+
+            <h3>Trend Types</h3>
+            <ul>
+                <li><strong>Uptrend:</strong> Higher highs and higher lows</li>
+                <li><strong>Downtrend:</strong> Lower highs and lower lows</li>
+                <li><strong>Sideways/Range:</strong> No clear direction</li>
+            </ul>
+
+            <h3>Trend Confirmation Tools</h3>
+            <ol>
+                <li>Moving Averages (price above/below)</li>
+                <li>Trendlines (connecting swing points)</li>
+                <li>ADX indicator (strength measurement)</li>
+            </ol>
+        </div>
+
+        <!-- Volume Analysis Section -->
+        <div class="ta-section" id="volume">
+            <h2>Volume Analysis</h2>
+            <div class="pattern-card">
+                <h4>Triangles</h4>
+                <img src="/Assets/Images/volume.png" alt="volume analysis">
+            </div>
+            <p>Measures the number of shares/contracts traded, indicating strength behind moves.</p>
+
+            <h3>Volume Signals</h3>
+            <ul>
+                <li><strong>Breakouts:</strong> Should have high volume</li>
+                <li><strong>Reversals:</strong> Often accompanied by volume spikes</li>
+                <li><strong>Divergence:</strong> Price rising on declining volume</li>
+            </ul>
+
+            <div class="concept-card">
+                <h4>Volume Profile</h4>
+                <p>Shows volume traded at specific price levels, revealing areas of high liquidity.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>TradersFund</h3>
+                    <p>Helping beginner traders start with free capital since 2024.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">TW</a>
+                        <a href="#" class="social-link">TG</a>
+                        <a href="#" class="social-link">DC</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Bonuses</h3>
+                    <ul>
+                        <li><a href="./exchanges.html">No Deposit Bonuses</a></li>
+                        <li><a href="MEXC : https://www.mexc.com/auth/signup?inviteCode=2v3Bi">Crypto Exchange
+                                Offers</a></li>
+                        <li><a href="https://www.xmglobal.com/referral?token=-Bn-486wO5PJr6dQ3uCYPQ">Forex Broker
+                                Promos</a></li>
+                        <li><a href="#">Stock Trading Rewards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="./beginner-guide.html">Beginner's Guide</a></li>
+                        <li><a href="./Risk-Management.html">Risk Management</a></li>
+                        <li><a href="./StrategyLab.html">Trading Strategies</a></li>
+                        <li><a href="#">Broker Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Affiliate Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 TradersFund. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
