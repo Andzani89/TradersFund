@@ -1,0 +1,162 @@
+/* Maintain original CSS from index.html */
+:root {
+    --primary: #6e45e2;
+    --secondary: #88d3ce;
+    --accent: #ff7e5f;
+    --dark: #1a1a2e;
+    --light: #f8f9fa;
+    --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+    --neon-glow: 0 0 10px rgba(110, 69, 226, 0.7);
+    --card-bg: rgba(255, 255, 255, 0.1);
+}
+
+/* Add new educational styles */
+.learning-path {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.concept-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.concept-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--neon-glow);
+}
+
+.module-progress {
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    margin: 15px 0;
+}
+
+.progress-bar {
+    height: 100%;
+    background: var(--gradient);
+    border-radius: 2px;
+    transition: width 0.5s ease;
+}
+
+.topic-list {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.topic-item {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topic-item i {
+    color: var(--secondary);
+}
+
+.quiz-container {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 40px 0;
+    position: relative;
+}
+
+.quiz-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.quiz-option {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: left;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quiz-option:hover {
+    background: rgba(110, 69, 226, 0.2);
+    border-color: var(--primary);
+}
+
+.correct {
+    background: rgba(136, 211, 206, 0.15) !important;
+    border-color: var(--secondary) !important;
+}
+
+.wrong {
+    background: rgba(255, 126, 95, 0.15) !important;
+    border-color: var(--accent) !important;
+}
+
+.crypto-glossary {
+    margin: 40px 0;
+}
+
+.term-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.term-card:hover {
+    transform: translateX(10px);
+}
+
+.term-definition {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    color: var(--secondary);
+}
+
+.term-card.active .term-definition {
+    max-height: 200px;
+    padding-top: 15px;
+}
+
+.market-ticker {
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 0;
+    backdrop-filter: blur(5px);
+    z-index: 99;
+}
+
+.ticker-content {
+    display: flex;
+    gap: 40px;
+    animation: ticker 30s linear infinite;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
