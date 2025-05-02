@@ -255,6 +255,10 @@ span {
     transition: width 0.2s ease;
 }
 
+#how {
+        margin-top: 24em;
+    }
+
 /* Bonus Claim Section */
 .bonus-claim {
     width: 90%;
