@@ -33,7 +33,7 @@ body {
 
 /* Header Styles */
 header {
-    padding: 20px 0;
+    padding: 15px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -53,7 +53,7 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     background: linear-gradient(to right, var(--primary), var(--accent));
     -webkit-background-clip: text;
@@ -69,12 +69,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 20px;
 }
 
 nav a {
@@ -84,6 +87,7 @@ nav a {
     position: relative;
     padding: 5px 0;
     transition: all 0.3s ease;
+    font-size: 0.95rem;
 }
 
 nav a:hover {
@@ -112,14 +116,14 @@ nav a:hover::after {
     color: var(--light);
     font-size: 1.5rem;
     cursor: pointer;
+    padding: 5px;
 }
 
 /* Blog Post Styles */
 .blog-post-container {
     max-width: 800px;
-    margin: 150px auto 180px;
-    padding: 0px;
-    margin-left: '';
+    margin: 120px auto 100px;
+    padding: 0;
     background: rgba(26, 26, 46, 0.7);
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -129,93 +133,117 @@ nav a:hover::after {
 
 .blog-post-header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    padding: 30px 20px 0;
 }
 
 .blog-post-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 15px;
     background: linear-gradient(to right, var(--primary), var(--secondary), var(--accent));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    line-height: 1.3;
 }
 
 .blog-post-meta {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
     color: rgba(255, 255, 255, 0.7);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     margin-bottom: 20px;
 }
 
 .blog-post-image {
     width: 90%;
-    margin: auto;
-    height: 400px;
+    max-width: 100%;
+    margin: 0 auto 25px;
+    height: auto;
+    max-height: 400px;
     object-fit: cover;
     border-radius: 15px;
-    margin-bottom: 30px;
+    display: block;
     box-shadow: var(--neon-glow);
 }
 
 .blog-post-content {
-    line-height: 1.2;
-    font-size: medium;
-    padding-top: 40em;
-    width: 90%;
-    margin: auto;
+    line-height: 1.6;
+    font-size: 1rem;
+    padding: 0 5% 30px;
+    width: 100%;
 }
 
 .blog-post-content p {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    font-size: 1rem;
 }
 
 .blog-post-content h2 {
     color: var(--secondary);
-    margin: 40px 0 20px;
-    font-size: 1.8rem;
-    padding-top: 0.5em;
+    margin: 35px 0 15px;
+    font-size: 1.6rem;
 }
 
 .blog-post-content h3 {
     color: var(--accent);
-    margin: 30px 0 15px;
-    font-size: 1.4rem;
+    margin: 25px 0 12px;
+    font-size: 1.3rem;
 }
 
 .blog-post-content ul,
 .blog-post-content ol {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     padding-left: 20px;
 }
 
 .blog-post-content li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
 }
 
 .blog-post-content blockquote {
     border-left: 3px solid var(--primary);
-    padding-left: 20px;
-    margin: 25px 0;
+    padding: 15px 20px;
+    margin: 20px 0;
     font-style: italic;
     color: rgba(255, 255, 255, 0.8);
+    background: rgba(110, 69, 226, 0.1);
+    border-radius: 0 8px 8px 0;
 }
 
+.blog-post-content blockquote cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: var(--secondary);
+}
+
+.blog-post-content a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.blog-post-content a:hover {
+    text-decoration: underline;
+}
 
 span {
     font-weight: bold;
-    font-size: large;
+    font-size: 1.05rem;
 }
 
 /* Reading Progress */
 .reading-progress {
     position: fixed;
-    top: 70px;
+    top: 60px;
     left: 0;
     width: 100%;
-    height: 5px;
+    height: 4px;
     background: rgba(255, 255, 255, 0.1);
     z-index: 99;
 }
@@ -230,10 +258,9 @@ span {
 /* Bonus Claim Section */
 .bonus-claim {
     width: 90%;
-    margin: auto;
+    margin: 40px auto;
     text-align: center;
-    margin-bottom: 40px;
-    padding: 40px;
+    padding: 30px 20px;
     background: rgba(110, 69, 226, 0.1);
     border-radius: 15px;
     border: 1px solid var(--primary);
@@ -243,24 +270,25 @@ span {
 
 .bonus-claim h2 {
     color: var(--secondary);
-    margin-bottom: 20px;
-    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
 }
 
 .bonus-claim p {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 0.95rem;
 }
 
 .claim-btn {
-    padding: 15px 40px;
+    padding: 12px 30px;
     background: var(--gradient);
     color: white;
     border: none;
     border-radius: 50px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -274,23 +302,29 @@ span {
 
 /* Footer */
 footer {
-    padding: 60px 0 30px;
+    padding: 50px 0 30px;
     background: rgba(0, 0, 0, 0.2);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-    margin-bottom: 40px;
+    gap: 30px;
+    margin-bottom: 30px;
 }
 
 .footer-col h3 {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
     color: var(--secondary);
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    opacity: 0.8;
 }
 
 .footer-col ul {
@@ -298,7 +332,7 @@ footer {
 }
 
 .footer-col li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .footer-col a {
@@ -306,6 +340,7 @@ footer {
     text-decoration: none;
     opacity: 0.8;
     transition: all 0.3s ease;
+    font-size: 0.9rem;
 }
 
 .footer-col a:hover {
@@ -315,18 +350,20 @@ footer {
 
 .social-links {
     display: flex;
-    gap: 15px;
+    gap: 12px;
+    margin-top: 15px;
 }
 
 .social-link {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    font-size: 0.9rem;
 }
 
 .social-link:hover {
@@ -339,6 +376,7 @@ footer {
     padding-top: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     opacity: 0.7;
+    font-size: 0.85rem;
 }
 
 /* Animations */
@@ -355,21 +393,62 @@ footer {
 }
 
 /* Responsive Styles */
+@media (max-width: 992px) {
+    .blog-post-container {
+        margin: 120px auto 80px;
+    }
+
+    .blog-post-title {
+        font-size: 1.8rem;
+    }
+
+    .blog-post-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .blog-post-content h3 {
+        font-size: 1.2rem;
+    }
+
+    #how {
+        margin-top: 24em;
+    }
+}
+
 @media (max-width: 768px) {
     .header-container {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
+        gap: 15px;
     }
 
     nav ul {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(26, 26, 46, 0.95);
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 0;
+        padding: 20px 0;
         display: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
     }
 
     nav ul.show {
         display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 12px 0;
+        width: 100%;
     }
 
     .mobile-menu-btn {
@@ -377,19 +456,156 @@ footer {
     }
 
     .blog-post-container {
-        margin-top: 120px;
-        padding: 25px;
+        margin-top: 100px;
+        border-radius: 15px;
     }
 
     .blog-post-title {
-        font-size: 2rem;
+        font-size: 1.6rem;
+    }
+
+    .blog-post-meta {
+        gap: 10px;
+        font-size: 0.8rem;
     }
 
     .blog-post-image {
-        height: 250px;
+        height: auto;
+        max-height: 300px;
+    }
+
+    .blog-post-content {
+        padding: 0 20px 25px;
+    }
+
+    .blog-post-content h2 {
+        font-size: 1.4rem;
+        margin: 30px 0 15px;
+    }
+
+    .blog-post-content h3 {
+        font-size: 1.15rem;
+        margin: 25px 0 12px;
+    }
+
+    .bonus-claim {
+        padding: 25px 15px;
+    }
+
+    .bonus-claim h2 {
+        font-size: 1.4rem;
     }
 
     .reading-progress {
         top: 60px;
+    }
+
+    #how {
+        margin-top: 24em;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .logo-icon {
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+
+    .blog-post-container {
+        margin: 90px auto 60px;
+        border-radius: 12px;
+    }
+
+    .blog-post-title {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .blog-post-header {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .blog-post-meta {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 0.75rem;
+    }
+
+    .blog-post-image {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .blog-post-content {
+        font-size: 0.95rem;
+    }
+
+    .blog-post-content p {
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+    }
+
+    .blog-post-content h2 {
+        font-size: 1.3rem;
+        margin: 25px 0 12px;
+    }
+
+    .blog-post-content h3 {
+        font-size: 1.1rem;
+        margin: 20px 0 10px;
+    }
+
+    .blog-post-content li {
+        font-size: 0.9rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-col {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .claim-btn {
+        padding: 10px 25px;
+        font-size: 0.95rem;
+    }
+
+    #how {
+        margin-top: 24em;
+    }
+}
+
+@media (max-width: 400px) {
+    .blog-post-title {
+        font-size: 1.3rem;
+    }
+
+    .blog-post-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .blog-post-content h3 {
+        font-size: 1.05rem;
+    }
+
+    .bonus-claim h2 {
+        font-size: 1.2rem;
+    }
+
+    #how {
+        margin-top: 24em;
     }
 }
