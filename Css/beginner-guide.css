@@ -61,6 +61,19 @@ header {
     color: transparent;
 }
 
+.logo-icon {
+    width: 30px;
+    height: 30px;
+    background: var(--gradient);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
 nav ul {
     display: flex;
     list-style: none;
