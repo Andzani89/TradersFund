@@ -23,9 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (generateBtn) {
             generateBtn.addEventListener('click', () => {
                 const ideas = [
-                    "Consider long position on GBP/USD at 1.2650 with 1:2 risk-reward ratio",
-                    "BTC showing bullish divergence on 4H chart, potential long entry at $41,500",
-                    "Watch for breakout above 1820 on gold, potential short if rejects resistance"
+                    "📈 $103,767 (+4.5%)Bitcoin has surged past the $100K mark, driven by optimism from the U.S.-U.K. trade deal and easing global tensions.",
+                    "📈 $2,362.78 (+22.5%)Ethereum sees significant gains, reflecting renewed investor confidence in digital assets",
+                    "📈 $165.09 (+8.8%)Solana's price increases, contributing to the positive market dynamics.",
+                    "📈 $633.15 (+3.3%)BNB continues its upward trend, supported by positive market sentiment.",
+                    "📈 $2.34 (+6.8%)XRP benefits from the broader crypto rally, with investors showing increased interest.",
+                    "📈 $0.792 (+11.8%)Cardano experiences notable growth, aligning with the overall market upswing.",
+                    "📈 $0.206 (+13.7%)Dogecoin gains momentum, reflecting the bullish trend in the crypto market."
                 ];
                 const messagesContainer = document.querySelector('.ai-messages');
                 if (messagesContainer) {
