@@ -328,6 +328,7 @@ nav a:hover::after {
     background-size: cover;
     background-position: center;
     position: relative;
+    object-fit: '';
 }
 
 .airdrop-logo {

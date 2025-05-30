@@ -1,9 +1,9 @@
 // Wait for DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Mobile menu toggle with null checks
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const navMenu = document.getElementById('nav-menu');
-    
+
     if (mobileMenuBtn && navMenu) {
         mobileMenuBtn.addEventListener('click', () => {
             navMenu.classList.toggle('show');
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // AI Assistant with null checks
     const aiToggle = document.querySelector('.ai-toggle');
     const aiChat = document.querySelector('.ai-chat');
-    
+
     if (aiToggle && aiChat) {
         aiToggle.addEventListener('click', () => {
             aiChat.style.display = aiChat.style.display === 'block' ? 'none' : 'block';
@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (generateBtn) {
             generateBtn.addEventListener('click', () => {
                 const ideas = [
-                    "📈 $103,767 (+4.5%)Bitcoin has surged past the $100K mark, driven by optimism from the U.S.-U.K. trade deal and easing global tensions.",
-                    "📈 $2,362.78 (+22.5%)Ethereum sees significant gains, reflecting renewed investor confidence in digital assets",
-                    "📈 $165.09 (+8.8%)Solana's price increases, contributing to the positive market dynamics.",
-                    "📈 $633.15 (+3.3%)BNB continues its upward trend, supported by positive market sentiment.",
-                    "📈 $2.34 (+6.8%)XRP benefits from the broader crypto rally, with investors showing increased interest.",
-                    "📈 $0.792 (+11.8%)Cardano experiences notable growth, aligning with the overall market upswing.",
-                    "📈 $0.206 (+13.7%)Dogecoin gains momentum, reflecting the bullish trend in the crypto market."
+                    "Ethereum (ETH): $2,626 ⬇️ -3.8%🧪 Testing $2, 630 support — bulls watching closely.",
+                    "BNB (BNB): $669 ⬇️ -2.2%⚖️ Slight dip even after SEC lawsuit dismissal news.",
+                    "XRP (XRP): $2.20 ⬇️ -3.5%⚠️ Still affected by legal uncertainty.",
+                    "Cardano (ADA): $0.70 ⬇️ -6.5%📊 No major news, just following overall market trend.",
+                    "Livepeer (LPT): Surged by 35.7%, making it the top gainer among major cryptocurrencies today.",
+                    "DeXe (DEXE): Named 'Coin of the Day' with a 12.1% gain, reflecting strong investor interest.",
+                    "Market Sentiment: The overall cryptocurrency market cap decreased by 2.76% to $3.35 trillion, indicating a bearish trend across the board"
                 ];
                 const messagesContainer = document.querySelector('.ai-messages');
                 if (messagesContainer) {
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             const textarea = document.querySelector('.post-form textarea');
             const postsContainer = document.querySelector('.trade-posts');
-            
+
             if (textarea && textarea.value && postsContainer) {
                 const newPost = document.createElement('div');
                 newPost.className = 'trade-post';
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Tab functionality with null checks
     const tabButtons = document.querySelectorAll('.tab-btn');
     const bonusCards = document.querySelectorAll('.bonus-card');
-    
+
     if (tabButtons.length && bonusCards.length) {
         tabButtons.forEach(button => {
             button.addEventListener('click', () => {
@@ -106,8 +106,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 button.classList.add('active');
                 const category = button.getAttribute('data-category');
                 bonusCards.forEach(card => {
-                    card.style.display = (category === 'all' || card.getAttribute('data-category').includes(category)) 
-                        ? 'block' 
+                    card.style.display = (category === 'all' || card.getAttribute('data-category').includes(category))
+                        ? 'block'
                         : 'none';
                 });
             });
@@ -116,11 +116,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Smooth scrolling with null checks
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
-            
+
             if (targetElement) {
                 window.scrollTo({
                     top: targetElement.offsetTop - 100,
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Newsletter form with null check
     const newsletterForm = document.getElementById('newsletter-form');
     if (newsletterForm) {
-        newsletterForm.addEventListener('submit', function(e) {
+        newsletterForm.addEventListener('submit', function (e) {
             e.preventDefault();
             const emailInput = this.querySelector('input[type="email"]');
             if (emailInput && emailInput.value) {
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Bonus card claim buttons with null checks
     const claimButtons = document.querySelectorAll('.claim-btn');
     claimButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             const card = this.closest('.bonus-card');
             if (card) {
                 const brokerName = card.querySelector('h3')?.textContent.trim();
@@ -177,9 +177,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const response = await fetch(
                 `https://api.coingecko.com/api/v3/simple/price?ids=${Object.keys(cryptoIds).join(',')}&vs_currencies=usd&include_24hr_change=true`
             );
-            
+
             if (!response.ok) throw new Error('Network response was not ok');
-            
+
             const data = await response.json();
             updatePriceGrid(data);
             updateTicker(data);
