@@ -323,6 +323,10 @@ nav a:hover::after {
     z-index: 2;
 }
 
+#grid2{
+    margin-top: 2em;
+}
+
 .airdrop-image {
     height: 120px;
     background-size: cover;
