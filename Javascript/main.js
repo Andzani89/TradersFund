@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded', function () {
         if (generateBtn) {
             generateBtn.addEventListener('click', () => {
                 const ideas = [
-                    "Ethereum (ETH): $2,626 ⬇️ -3.8%🧪 Testing $2, 630 support — bulls watching closely.",
-                    "BNB (BNB): $669 ⬇️ -2.2%⚖️ Slight dip even after SEC lawsuit dismissal news.",
-                    "XRP (XRP): $2.20 ⬇️ -3.5%⚠️ Still affected by legal uncertainty.",
-                    "Cardano (ADA): $0.70 ⬇️ -6.5%📊 No major news, just following overall market trend.",
-                    "Livepeer (LPT): Surged by 35.7%, making it the top gainer among major cryptocurrencies today.",
-                    "DeXe (DEXE): Named 'Coin of the Day' with a 12.1% gain, reflecting strong investor interest.",
-                    "Market Sentiment: The overall cryptocurrency market cap decreased by 2.76% to $3.35 trillion, indicating a bearish trend across the board"
+                    "Bitcoin is hovering around $101,900, down roughly 0.5% today. It recently tested a low near $98,900, influenced by geopolitical tensions and liquidation events",
+                    "Ethereum is trading at about $2,259, down approximately 0.6%, with recent volatility hitting nearly 10% amid global uncertainty",
+                    "U.S. strikes on Iran triggered a market-wide slump, liquidating over $595 million in bullish bets, with Bitcoin falling below $100K before rebounding",
+                    "Public firms amassed 12,400 BTC last week, while miners produced just 3,150 BTC, reinforcing a supply squeeze",
+                    "The presale space is buzzing, with projects like Solaxy (a Solana L2) raising over $56 million, alongside growing interest post-EU MiCA moves",
+                    "Spot Bitcoin ETF inflows are down over 26%, while ETF activity dropped to zero yesterday, signaling cautious institutional behavior",
+                    "The total crypto market cap is around $3.11 trillion, with nearly 79% of coins in the red, indicating a bearish sentiment "
                 ];
                 const messagesContainer = document.querySelector('.ai-messages');
                 if (messagesContainer) {
